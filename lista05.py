@@ -1,4 +1,4 @@
-# 1. Retornar o maior entre dois números
+# Questão 1
 def maior(x, y):
     return x if x > y else y
 
@@ -7,7 +7,7 @@ def maior_entre_dois():
     y = float(input("Digite o segundo número: "))
     print(f"O maior número é: {maior(x, y)}")
 
-# 2. Retornar o maior entre três números
+# Questão 2
 def maior(x, y, z):
     return max(x, y, z)
 
@@ -17,7 +17,7 @@ def maior_entre_tres():
     z = float(input("Digite o terceiro número: "))
     print(f"O maior número é: {maior(x, y, z)}")
 
-# 3. Retornar as iniciais do nome de uma pessoa
+# Questão 3
 def iniciais(nome):
     return ''.join([parte[0].upper() for parte in nome.split()])
 
@@ -25,7 +25,7 @@ def obter_iniciais():
     nome = input("Digite seu nome completo: ")
     print(f"As iniciais do nome são: {iniciais(nome)}")
 
-# 4. Informar se um aluno foi aprovado ou está em prova final
+# Questão 4
 def aprovado(nota1, nota2):
     media = (nota1 + nota2) / 2
     return media >= 60
@@ -38,7 +38,7 @@ def situacao_aluno():
     else:
         print("Aluno em prova final!")
 
-# 5. Formatar o nome de uma pessoa
+# Questão 5
 def formatar_nome(nome):
     return nome.title()
 
@@ -46,7 +46,7 @@ def formatar_nome_usuario():
     nome = input("Digite seu nome: ")
     print(f"Nome formatado: {formatar_nome(nome)}")
 
-# Menu para executar os exercícios
+# Questão 6
 if __name__ == "__main__":
     print("Escolha o exercício para executar:")
     print("1 - Maior entre dois números")
